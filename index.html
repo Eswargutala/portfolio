@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eswar Gutala - Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for the 'Inter' font and smooth scrolling */
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+      /* Hide scrollbar for a cleaner look */
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      body {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 fixed w-full z-10 top-0">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Your Name/Logo -->
+        <a
+          href="#hero"
+          class="text-2xl font-bold text-indigo-700 rounded-lg p-2 hover:bg-indigo-50 transition duration-300"
+          >Eswar Gutala</a
+        >
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-indigo-700 font-medium transition duration-300 rounded-md py-2 px-3 hover:bg-indigo-50"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="text-gray-600 hover:text-indigo-700 font-medium transition duration-300 rounded-md py-2 px-3 hover:bg-indigo-50"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="text-gray-600 hover:text-indigo-700 font-medium transition duration-300 rounded-md py-2 px-3 hover:bg-indigo-50"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-gray-600 hover:text-indigo-700 font-medium transition duration-300 rounded-md py-2 px-3 hover:bg-indigo-50"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white flex items-center justify-center min-h-screen py-20 px-4 pt-24 md:pt-0 overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <!-- Background gradient and shapes for visual appeal -->
+        <div
+          class="absolute -top-10 -left-10 w-64 h-64 bg-white opacity-5 rounded-full filter blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-20 -right-20 w-80 h-80 bg-white opacity-5 rounded-full filter blur-3xl"
+        ></div>
+      </div>
+      <div class="container mx-auto text-center z-10">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+          Hi, I'm <span class="text-yellow-300">Eswar Gutala</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto">
+          A passionate Web Developer creating amazing things with code.
+        </p>
+        <a
+          href="#projects"
+          class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+        >
+          View My Work
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row items-center md:space-x-12">
+          <div class="w-full md:w-1/3 mb-8 md:mb-0">
+            <!-- Placeholder image for your profile -->
+            <img
+              src="https://placehold.co/400x400/C7D2FE/4F46E5?text=Eswar+Gutala"
+              alt="Eswar Gutala Photo"
+              class="w-full h-auto rounded-full shadow-xl border-4 border-indigo-200"
+            />
+          </div>
+          <div class="w-full md:w-2/3 text-lg leading-relaxed text-gray-700">
+            <p class="mb-4">
+              Hello! My name is <span class="font-semibold">Eswar Gutala</span>,
+              and I'm an Aspiring Frontend Developer with a strong foundation in
+              modern web technologies such as HTML, CSS, Bootstrap, and React.
+            </p>
+            <p class="mb-4">
+              I am eager to join a forward-thinking development team to create
+              responsive user interfaces and grow into a full-stack development
+              role.
+            </p>
+            <p>
+              I am passionate about learning new technologies and solving
+              complex problems to bring innovative and user-friendly web
+              applications to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-indigo-50 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">
+          My Skills
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <!-- Skill Card Example -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center"
+          >
+            <img
+              src="https://placehold.co/64x64/E0E7FF/4F46E5?text=HTML"
+              alt="HTML Icon"
+              class="w-16 h-16 mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center"
+          >
+            <img
+              src="https://placehold.co/64x64/E0E7FF/4F46E5?text=CSS"
+              alt="CSS Icon"
+              class="w-16 h-16 mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center"
+          >
+            <img
+              src="https://placehold.co/64x64/E0E7FF/4F46E5?text=BS"
+              alt="Bootstrap Icon"
+              class="w-16 h-16 mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Bootstrap</h3>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center"
+          >
+            <img
+              src="https://placehold.co/64x64/E0E7FF/4F46E5?text=JS"
+              alt="JavaScript Icon"
+              class="w-16 h-16 mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center"
+          >
+            <img
+              src="https://placehold.co/64x64/E0E7FF/4F46E5?text=React"
+              alt="React Icon"
+              class="w-16 h-16 mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">React</h3>
+          </div>
+          <!-- Add more skills as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-50 px-4">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">
+          My Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="https://placehold.co/600x400/A78BFA/FFFFFF?text=Project+1"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                Frontend Portfolio Website
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A responsive personal portfolio website showcasing various
+                frontend skills and projects, built with modern web
+                technologies.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >Bootstrap</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/eswargutala"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300"
+                  >Live Demo (Placeholder)</a
+                >
+                <a
+                  href="https://github.com/eswargutala"
+                  target="_blank"
+                  class="text-gray-600 hover:text-gray-800 font-medium transition duration-300"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="https://placehold.co/600x400/818CF8/FFFFFF?text=Project+2"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                Interactive React App
+              </h3>
+              <p class="text-gray-600 mb-4">
+                An interactive web application demonstrating proficiency in
+                React components, state management, and API integration.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >React</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >API Integration</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/eswargutala"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300"
+                  >Live Demo (Placeholder)</a
+                >
+                <a
+                  href="https://github.com/eswargutala"
+                  target="_blank"
+                  class="text-gray-600 hover:text-gray-800 font-medium transition duration-300"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="https://placehold.co/600x400/6366F1/FFFFFF?text=Project+3"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                Responsive Web Layouts
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A collection of responsive web layouts demonstrating mastery of
+                CSS techniques and mobile-first design principles.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  >Responsive Design</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/eswargutala"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300"
+                  >Live Demo (Placeholder)</a
+                >
+                <a
+                  href="https://github.com/eswargutala"
+                  target="_blank"
+                  class="text-gray-600 hover:text-gray-800 font-medium transition duration-300"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-indigo-600 text-white px-4">
+      <div class="container mx-auto max-w-2xl text-center">
+        <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+        <p class="text-xl mb-8">
+          I'm always open to new opportunities, collaborations, and interesting
+          conversations. Feel free to reach out!
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+        >
+          <a
+            href="mailto:eswargutala@gmail.com"
+            class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+          >
+            Email Me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eswar-gutala"
+            target="_blank"
+            class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-8 px-4">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">&copy; 2025 Eswar Gutala. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+          <!-- Social Media Links -->
+          <a
+            href="https://github.com/eswargutala"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            <svg
+              class="w-6 h-6 inline-block"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.164 6.837 9.48.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.603-3.37-1.34-3.37-1.34-.454-1.15-.11-2.02-.11-2.02-.93-.635.072-.622.072-.622 1.036.072 1.58.918 1.58.918.918 1.572 2.404 1.117 2.98.854.092-.665.36-1.117.658-1.371-2.28-.26-4.673-1.14-4.673-5.04 0-1.11.393-2.02.918-2.73-.092-.26-.39-1.29.088-2.685 0 0 .75-.242 2.47 1.026A8.675 8.675 0 0112 5.07c.85.006 1.7-.11 2.47-.327 1.72-1.268 2.47-1.026 2.47-1.026.478 1.395.18 2.425.088 2.685.525.71.918 1.62.918 2.73 0 3.91-2.396 4.77-4.686 5.03.36.31.682.92.682 1.85 0 1.34-.013 2.42-.013 2.75 0 .26.18.575.688.473C20.137 20.165 23 16.416 23 12c0-5.523-4.477-10-10-10z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eswar-gutala"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            <svg
+              class="w-6 h-6 inline-block"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.7a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM20 19h-3v-5.6c0-1.3-.4-2.2-1.7-2.2-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v5.8H11V8h3v1.8c.6-.9 1.6-2 3.6-2 2.6 0 4.4 1.7 4.4 5.3V19z"
+              />
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
